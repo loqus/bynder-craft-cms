@@ -2,7 +2,7 @@
     "name": "loqus/bynder-craft-cms",
     "description": "Bynder DAM Integration for Craft CMS 5.x",
     "type": "craft-plugin",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "keywords": [
         "craft",
         "cms",

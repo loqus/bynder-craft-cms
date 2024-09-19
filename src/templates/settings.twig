@@ -1,0 +1,69 @@
+{#
+/**
+ * Bynder UCV plugin for Craft CMS 5.x
+ *
+ * @author    Bynder
+ * @copyright Copyright (c) 2024 Loqus
+ * @link      https://www.loqus.nl
+ * @package   byndercraftcms
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.autosuggestField({
+    label: 'Portal url'|t,
+    instructions: 'The url to your Bynder portal like fruit.bynder.com',
+    id: 'portalurl',
+    name: 'portalurl',
+    suggestEnvVars: true,
+    required: true,
+    value: settings['portalurl']})
+}}
+{% set languages = [
+  {
+    label: 'English (United States))'|t,
+    value: 'en_US'
+  },
+  {
+    label: 'English (United Kingdom)'|t,
+    value: 'en_GB'
+  },
+  {
+    label: 'Deutsch'|t,
+    value: 'de_DE'
+  },
+  {
+    label: 'français'|t,
+    value: 'fr_FR'
+  },
+  {
+    label: 'español'|t,
+    value: 'es_ES'
+  },
+  {
+    label: 'português'|t,
+    value: 'pt_BR'
+  },
+  {
+    label: 'dansk'|t,
+    value: 'da_DK'
+  },
+  {
+    label: '한국어'|t,
+    value: 'ko_KR'
+  },
+  {
+    label: '中文'|t,
+    value: 'zh_TW'
+  }
+] %}
+
+{{ forms.selectField({
+    label: 'Language'|t,
+    id: 'language',
+    name: 'language',
+    options: languages,
+    value: settings['language']})
+}}

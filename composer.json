@@ -1,0 +1,42 @@
+{
+    "name": "loqus/bynder-craft-cms",
+    "description": "Bynder DAM Integration for Craft CMS 5.x",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "bynder",
+        "ucv"
+    ],
+    "support": {
+        "docs": "https://github.com/loqus/bynder-craft-cms/blob/master/README.md",
+        "issues": "https://github.com/loqus/bynder-craft-cms/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Loqus",
+            "homepage": "https://www.loqus.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "craftcms/cms": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "loqus\\byndercraftcms\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Bynder Assets",
+        "handle": "bynder-craft-cms",
+        "developer": "Bynder",
+        "developerUrl": "https://www.loqus.nl",
+        "changelogUrl": "https://raw.githubusercontent.com/loqus/byndercraftcms/main/CHANGELOG.md",
+        "class": "loqus\\byndercraftcms\\BynderAssets"
+    }
+}

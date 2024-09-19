@@ -43,8 +43,8 @@ class BynderAssetEditBundle extends AssetBundle
         ];
 
         $this->js = [
-            'js/bynder-compactview-3-latest.js',
-            'js/bynderassetedit.js',
+            'js/bynder-compactview-3-latest.js?v=1.0.6',
+            'js/bynderassetedit.js?v=1.0.6',
         ];
 
         $this->css = [

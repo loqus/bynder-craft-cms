@@ -107,7 +107,7 @@ var volume = "";
 
                                     $.ajax({
                                         type: 'POST',
-                                        url: '/actions/craft-bynder-assets/bynder-asset/save-bynder-asset/',
+                                        url: '/actions/craft-bynder-cms/bynder-asset/save-bynder-asset/',
                                         headers: {
                                             'X-Requested-With': 'XMLHttpRequest',
                                             'X-CSRF-Token': session.csrfTokenValue

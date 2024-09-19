@@ -36,7 +36,7 @@ class BynderAssetEditBundle extends AssetBundle
         
         Craft::$app->getView()->registerJs("new Craft.CraftBynderAssetSelector(" . $jsonVars . ");");
 
-        $this->sourcePath = "@loqus/bynderassets/assetbundles/dist";
+        $this->sourcePath = "@loqus/byndercraftcms/assetbundles/dist";
 
         $this->depends = [
             CpAsset::class,
